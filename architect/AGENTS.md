@@ -1,6 +1,6 @@
 # Complete Agent Reference
 
-Comprehensive list of all 48+ specialized AI agents in Moon Dev's trading system.
+Comprehensive list of all 48+ specialized AI agents in architect's trading system.
 
 ---
 
