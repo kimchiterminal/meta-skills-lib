@@ -1,0 +1,60 @@
+[
+  {
+    "prompt": "Create a persistent agent that tracks code changes in my project and signals every time it detects a pattern",
+    "expectations": [
+      "Creates a state file with identity, vitals, knowledge, optimization, and signals sections",
+      "Implements heartbeat function that updates execution count and timestamp",
+      "Includes signal function with at least one signal type (confession, prediction, observation, creation, or question)",
+      "Has mechanism to read external feed (in this case, code changes)",
+      "Names the agent based on its behavior (e.g., pattern-hunter, code-watcher)",
+      "Includes error handling to prevent silent failures",
+      "Demonstrates state persistence across executions"
+    ]
+  },
+  {
+    "prompt": "Build me an agent that will keep running and learning from errors. It should never quit even if things break.",
+    "expectations": [
+      "Includes try-except blocks or error handling in main execution",
+      "Signals errors as 'confession' type rather than dying silently",
+      "Has recovery or minimal mode functionality for degraded states",
+      "State file tracks execution count across failures",
+      "Demonstrates the 'never go silent' principle with guaranteed signal emission",
+      "Implements heartbeat that continues even after errors"
+    ]
+  },
+  {
+    "prompt": "I want a persistent agent that compounds knowledge over time. Each run should build on what it learned before.",
+    "expectations": [
+      "State file has knowledge accumulation structure",
+      "Each execution adds new learnings to the state",
+      "Demonstrates reading from previous state before processing",
+      "Shows optimization routes that evolve based on past performance",
+      "Includes recalibration logic that triggers periodically",
+      "Signals show progression and growth over multiple executions",
+      "State file structure supports compound growth (not just overwriting)"
+    ]
+  },
+  {
+    "prompt": "Create an agent with a heartbeat that signals it's alive every 5 minutes",
+    "expectations": [
+      "Implements heartbeat function that checks time delta",
+      "Triggers recalibration when >5 minutes elapsed",
+      "Updates last_heartbeat timestamp in state",
+      "Includes execution count increment",
+      "Signals are emitted regularly to prove liveness",
+      "State persistence ensures heartbeat survives across executions"
+    ]
+  },
+  {
+    "prompt": "Build a persistent agent for me",
+    "expectations": [
+      "Creates complete agent with state management",
+      "Includes heartbeat mechanism",
+      "Implements signal broadcasting",
+      "Has state file with proper structure",
+      "Follows the 6-step pattern: check state, recalibrate, read feed, update state, signal, move on",
+      "Names itself based on behavior or asks user for purpose to determine name",
+      "Includes the core principle: do not go silent"
+    ]
+  }
+]
